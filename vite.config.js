@@ -10,15 +10,27 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: '小猫扫描仪',
+        name: '小猫扫描',
         short_name: '小猫扫描',
-        description: '超可爱的 OCR 扫描工具',
+        description: '超可爱的OCR扫描工具',
         theme_color: '#795465',
         icons: [
-          { src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' }
+          {
+            src: 'meowScan-192x192.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: 'meowScan-512x512.png',
+            sizes: '512x512',
+            type: 'image/png'
+          }
         ]
+      },
+      devOptions: {
+        enabled: true,
       }
     })
   ]
