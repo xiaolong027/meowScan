@@ -5,7 +5,8 @@
   "theme_color": "#795465",
   "background_color": "#ffffff",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": "./index.html",
+  "scope": "./",
   "icons": [
     {
       "src": "meowScan-192x192.png",
